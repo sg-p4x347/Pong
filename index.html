@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <title>Pong</title>   
+        <script type="text/javascript" src="script.js"></script>
+		<link rel="stylesheet" type="text/css" href="style.css"></link>
+    </head>
+	<body id = "body" onload = "initalize()">
+		<p class = "title">Pong</p>
+		<div id = "scores">
+			<p class = "heading" id = "p0">0</p>
+			<p id = "countDown"class = "title"></p>
+			<p class = "heading" id = "p1">0</p>
+		</div>
+		<canvas id="canvas"></canvas>
+		<div>
+			<div style = "float: left;">
+				<p>Computer?</p>
+				<input id = "leftPlayer" type = "checkbox" checked = "true">
+			</div>
+			<button onclick = "game.Start()">Start new round</button>
+			<div style = "float: right;">
+				<p>Computer?</p>
+				<input id = "rightPlayer" type = "checkbox" checked = "true">
+			</div>
+		</div>
+	</body>
+</html>
